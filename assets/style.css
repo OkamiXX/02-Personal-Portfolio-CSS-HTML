@@ -1,3 +1,5 @@
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Root to create all color variables used on this website */
 :root {
  --gris: rgba(36, 36, 36, 0.411);
  --azul: rgba(0, 255, 242, 0.842);
@@ -6,6 +8,7 @@
  --fondo: rgba(55,55,55,255);
 }
 
+/* To apply default styles */
 * {
     padding: 0;
     margin: 0;
@@ -14,25 +17,19 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 /* -------------------------------MEDIA QUERIES------------------------------------------ */
 /* -------------------------------------------------------------------------------------- */
 
+/* Media querie for phones (Im not at expert at this but tried my best, needs a lot of improvement that i am currently working on. Just time is crazy) */
 @media screen and (max-width: 600px) {
     
+    /* HTML size and color */
     html {
         background-color: var(--fondo);
         width: 102vh;
     }
     
+    /* Style for the hero section/header */
     .hero {
         height: 20vh;
         width: 110vh;
@@ -41,6 +38,7 @@
         background-position: center;
     }
 
+    /* Style for the nav bar */
     .hero nav {
         display: flex;
         align-items: center;
@@ -50,6 +48,8 @@
         padding-right: 3%;
     }
 
+    /* Style for the Portfolio heading text */
+    /* Cursor changes when hovering over */
     .head-text {
         color: var(--letra);
         font-size: 60px;
@@ -61,16 +61,19 @@
         padding-right: 30px;
     }
 
+    /* Makes folio have a different color */
     .head-text span {
         color: var(--azul);
     }
 
+    /* No style for lists and makes them align to each other */
     .hero ul li {
         list-style: none;
         display: inline-block;
         padding: 10px 25px;
     }
 
+    /* Style for each list item */
     .hero a {
         color: var(--letra);
         font-weight: bold;
@@ -84,6 +87,7 @@
         border-radius: 10px;
     }
 
+    /* Style for the button */
     .hero .button {
         background-color: var(--fondo);
         text-decoration: none;
@@ -92,6 +96,7 @@
         border-radius: 30px;
     }
 
+    /* Style for my info section that is located at th eleft of the first page. VH */
     .my-info {
         position: absolute;
         margin-left: 430px;
@@ -103,24 +108,29 @@
         transform: translateY(-50%);
     }
 
+    /* Style for the heading 1 */
     .my-info h1 {
         color: var(--letra);
     }
 
+    /* Style for heading 3 */
     .my-info h3 {
         color: var(--letra);
         font-size: 20px;
     }
 
+    /* Last name on a different style */
     .my-info span {
         color: var(--azul);
     }
 
+    /* Style for the job */
     .my-info h4 {
         color: var(--letra);
         font-size: 20px;
     }    
 
+    /* Style for the email form section */
     .my-info form input:first-child {
         width: 100%;
         padding: 14px 130px 14px 15px;
@@ -130,6 +140,7 @@
         margin-top: 20px;
     }
 
+    /* Style for the button on my info section */
     .my-info form input:last-child {
         outline: none;
         border: 2px dashed var(--azul);
@@ -141,11 +152,7 @@
         margin-left: 150px;
     }
     
-
-
-
-
-
+    /* Sets the style for the About Me box section */
     .about-me {
         width: 108%;
         padding: 100px 0px;
@@ -156,6 +163,7 @@
         border-right: 2px solid var(--azul);
     }
 
+    /* Style for the paragraph inside of the section */
     .me-text p {
     color: black;
     letter-spacing: 1px;
@@ -163,10 +171,7 @@
     margin-bottom: 45px;
 }
 
-
-
-
-
+    /* Style for the image inside of the section */
     .about-me img {
         height: auto;
         width: 400px;
@@ -177,16 +182,21 @@
         margin-left: 10px;
     }
 
+    /* Style for the text */
     .about-me .me-text {
         padding-bottom: 200px;
         margin-bottom: 800px;
     }
+
+    /* Style for the h2 */
     .me-text h2 {
         color: var(--azul);
         font-size: 59px;
         text-transform: capitalize;
         margin-bottom: 5px;
     }
+
+    /* Style for the h5 */
     .me-text h5 {
         font-size: 18px;
         margin-bottom: 10px;
@@ -194,12 +204,15 @@
         border-bottom: 2px dashed var(--azul);
     }
 
+    /* Style for p inside of .me text */
     .me-text p {
         color: black;
         letter-spacing: 1px;
         line-height: 20px;
         margin-bottom: 45px;
     }
+
+    /* Style for the button below the paragraph */
     .about-me button {
         background-color: var(--gris);
         color: var(--letra);
@@ -216,13 +229,15 @@
         cursor: pointer;
     }
 
-    
+    /* Style for the whole Project section box */
     .projects {
         background-color: #333333;
         width: 108%;
         border-top: 2px solid var(--azul);
         position: relative;
     }
+
+    /* Heading 2 style for the title in projects */
     .projects-title h2 {
         color: white;
         font-size: 25px;
@@ -233,6 +248,7 @@
         border-bottom: 2px dashed var(--azul);
     }
 
+    /* Style for the boxes and they are set to display: flex in order to align them. */
     .box {
         display: flex;
         justify-content: center;
@@ -240,6 +256,8 @@
         min-height: 300px;
         flex-direction: column;
     }
+
+    /* Style for the icon/idividual boxes. */
     .icon {
         height: 360px;
         width: 330px;
@@ -256,6 +274,7 @@
         
     }
 
+    /* Adjusts and stylize the logo in top of the box */
     .box i {
         font-size: 30px;
         display: block;
@@ -263,15 +282,19 @@
         margin: 25px 0px;
         color: var(--azul);
     }
+
+    /* Style for h5 */
     .projects h5 {
         color: var(--letra);
         font-size: 20px;
     }
     
+    /* Style for the p inside fo it */
     .projects p {
         color: var(--azul);
     }
     
+    /* Style for the info button */
     .projects .button {
         background-color: var(--gris);
         color: var(--letra);
@@ -285,6 +308,7 @@
         margin-top: 40px;
     }
 
+    /* Style for the whole contact me section */
     .contact {
         width: 108%;
         height: 30vh;
@@ -301,6 +325,7 @@
         
     }
     
+    /* Style for h2 in section */
     .contact h2 {
         color: var(--letra);
         font-size: 59px;
@@ -309,6 +334,8 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    /* Style for the navigation bar next to the contact me title */
     .contact nav {
         display: flex;
         align-items: center;
@@ -317,6 +344,8 @@
         padding-left: 7%;
         padding-right: 7%;
     }
+
+    /* Style for the unordered list / list */
     .contact ul {
         margin-bottom: 45px;
     }
@@ -326,6 +355,7 @@
         padding: 10px 25px;
     }
     
+    /* Adjust and style the individual elements inside of the list */
     .contact a {
         color: var(--letra);
         font-weight: bold;
@@ -338,6 +368,7 @@
         padding-right: 20px;
     }
 
+    /* Syle for the whole footer */
     footer {
         position: relative;
         width: 108%;
@@ -351,43 +382,32 @@
         border-top: 2px solid var(--azul);
         border-bottom: 2px solid var(--azul);
     }
+
+    /* Style for h2 in Footer */
     footer h2 {
         font-size: 25px;
         color: var(--letra);
     
     }
     
+    /* Style for the Footer p */
     footer p {
         font-size: 15px;
         color: var(--azul);
     
     }
     
+    /* Sets the style for the social media icons at the bottom */
     footer .s-media {
         padding-bottom: 25px;
         padding-top: 25px;
         font-size: 40px;
     }
     
+    /* Sets the color for all the icons. */
     .s-media a {
         color: var(--letra);
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -401,30 +421,17 @@
 /* -------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
 
 
 
 
+/* Media queries for when on a desktop */
 @media screen and (min-width: 600px) {
 
 /* ------------------------------------HEADER SECTION------------------------------------ */
 /* -------------------------------------------------------------------------------------- */
 
+    /* Style for the hero section/header */
     .hero {
         height: 100vh;
         width: 100%;
@@ -433,6 +440,7 @@
         background-position: center;
     }
     
+    /* Style for the nav bar */
     .hero nav {
         display: flex;
         align-items: center;
@@ -442,6 +450,8 @@
         padding-right: 7%;
     }
 
+    /* Style for the Portfolio heading text */
+    /* Cursor changes when hovering over */
     .head-text {
     color: var(--letra);
     font-size: 40px;
@@ -451,421 +461,474 @@
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
-}
+    }
 
-.head-text:hover {
-    color: var(--azul);
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px var(--azul);
-    transition: ease-in-out 400ms;
-}
+    /* Style for when you hover over the head text. */
+    .head-text:hover {
+        color: var(--azul);
+        box-shadow: 0px 0px 5px #000, 0px 0px 15px var(--azul);
+        transition: ease-in-out 400ms;
+    }
 
-.head-text span {
-    color: var(--azul);
-}
+    /* Makes folio have a different color */
+    .head-text span {
+        color: var(--azul);
+    }
 
-.hero ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 25px;
-}
+    /* No style for lists and makes them align to each other */
+    .hero ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
 
-.hero a {
-    color: var(--letra);
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: capitalize;
-    border-bottom: 2px solid var(--azul);
-    padding-bottom: 5px;
-}
+    /* Style for each list item */
+    .hero a {
+        color: var(--letra);
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: capitalize;
+        border-bottom: 2px solid var(--azul);
+        padding-bottom: 5px;
+    }
 
-.hero a:hover {
-    color: var(--azul);
-    transition: ease-in-out 400ms;
-}
+    /* Stylle changes when hovering over each nav bar element */
+    .hero a:hover {
+        color: var(--azul);
+        transition: ease-in-out 400ms;
+    }
 
-.hero .button {
-    
-    text-decoration: none;
-    border: 2px solid var(--azul);
-    padding: 10px 25px;
-    border-radius: 30px;
-}
+     /* Style for the button */
+    .hero .button {
+        
+        text-decoration: none;
+        border: 2px solid var(--azul);
+        padding: 10px 25px;
+        border-radius: 30px;
+    }
 
-.button:hover {
-    transform: scale(1.1);
-    border: 2px dashed var(--azul);
-    box-shadow: 0px 0px 5px #000, 0px 0px 10px var(--azul);
-    transition: 250ms;
-    cursor: pointer;
-}
+    /* Style changes when hovering over the click me button */
+    .button:hover {
+        transform: scale(1.1);
+        border: 2px dashed var(--azul);
+        box-shadow: 0px 0px 5px #000, 0px 0px 10px var(--azul);
+        transition: 250ms;
+        cursor: pointer;
+    }
 
-.my-info {
-    position: absolute;
-    top: 36%;
-    left: 7%;
-    transform: translateY(-50%);
-}
+    /* Style for my info section that is located at th eleft of the first page. VH */
+    .my-info {
+        position: absolute;
+        top: 36%;
+        left: 7%;
+        transform: translateY(-50%);
+    }
 
-.my-info h1 {
-    color: var(--letra);
-    margin: 15px 0px 15px;
-    font-size: 59px;
-}
+    /* Style for the heading 1 */
+    .my-info h1 {
+        color: var(--letra);
+        margin: 15px 0px 15px;
+        font-size: 59px;
+    }
 
-.my-info h3 {
-    color: var(--letra);
-    font-size: 20px;
-    margin-bottom: 25px;
-}
+    /* Style for heading 3 */
+    .my-info h3 {
+        color: var(--letra);
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
 
-.my-info span {
-    color: var(--azul);
-}
-.my-info span:hover {
-    border: 2px dashed var(--azul);
-    border-radius: 30px;
-    padding: 0px 30px 0px 25px;
-    transform: scale(1.1);
-    transition: ease-in-out 400ms;
-    cursor: pointer;
-}
+    /* Last name on a different style */
+    .my-info span {
+        color: var(--azul);
+    }
 
-.my-info h4 {
-    color: var(--letra);
-    font-size: 15px;
-    letter-spacing: 2px;
-}
+    /* Style for when hovering over last name */
+    .my-info span:hover {
+        border: 2px dashed var(--azul);
+        border-radius: 30px;
+        padding: 0px 30px 0px 25px;
+        transform: scale(1.1);
+        transition: ease-in-out 400ms;
+        cursor: pointer;
+    }
 
-.my-info form {
-    width: 340px;
-    max-width: 100%;
-    position: relative;
-}
+    /* Style for the job */
+    .my-info h4 {
+        color: var(--letra);
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
 
-.my-info form input:first-child {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid var(--azul);
-    border-radius: 30px;
-    outline: none;
-}
+    /* Style for the whole form box */
+    .my-info form {
+        width: 340px;
+        max-width: 100%;
+        position: relative;
+    }
 
-.my-info form input:last-child {
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: 2px dashed var(--azul);
-    padding: 5px 20px;
-    border-radius: 30px;
-    background-color: var(--azul2);
-    color: var(--letra);
-    top: 8.3px;
-    left: 350px;
-    cursor: pointer;
-    
-}
+    /* Style for the email form section */
+    .my-info form input:first-child {
+        display: inline-block;
+        width: 100%;
+        padding: 14px 130px 14px 15px;
+        border: 2px solid var(--azul);
+        border-radius: 30px;
+        outline: none;
+    }
 
-.my-info form input:last-child:hover {
-    box-shadow: 0px 0px 5px #000, 0px 0px 10px var(--azul);
-    transition: ease-in-out 250ms;
-}
+    /* Style for the button on my info section */
+    .my-info form input:last-child {
+        position: absolute;
+        display: inline-block;
+        outline: none;
+        border: 2px dashed var(--azul);
+        padding: 5px 20px;
+        border-radius: 30px;
+        background-color: var(--azul2);
+        color: var(--letra);
+        top: 8.3px;
+        left: 350px;
+        cursor: pointer;
+        
+    }
 
-/* -------------------------------------BODY SECTION------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
+    /* Style changes when hovering over the button. */
+    .my-info form input:last-child:hover {
+        box-shadow: 0px 0px 5px #000, 0px 0px 10px var(--azul);
+        transition: ease-in-out 250ms;
+    }
 
-.about-me {
-    width: 100%;
-    padding: 100px 0px;
-    background-image: url(./images/office-back.jpg);
-    background-size: cover;
-    background-position: center;
-    border-top: 2px solid var(--azul);
-}
+    /* -------------------------------------BODY SECTION------------------------------------- */
+    /* -------------------------------------------------------------------------------------- */
 
-.about-me img {
-    height: auto;
-    width: 430px;
-    border: 20px solid var(--gris);
-    border-radius: 30px;
-    margin-bottom: 150px;
-}
+    /* Sets the style for the About Me box section */
+    .about-me {
+        width: 100%;
+        padding: 100px 0px;
+        background-image: url(./images/office-back.jpg);
+        background-size: cover;
+        background-position: center;
+        border-top: 2px solid var(--azul);
+    }
 
-.about-me .me-text {
-    width: 550px;
-    padding-bottom: 320px;
-    
-}
+    /* Style for the image inside of the section */
+    .about-me img {
+        height: auto;
+        width: 430px;
+        border: 20px solid var(--gris);
+        border-radius: 30px;
+        margin-bottom: 150px;
+    }
 
-body .main {
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+    /* Style for the text */
+    .about-me .me-text {
+        width: 550px;
+        padding-bottom: 320px;
+        
+    }
 
-.me-text h2 {
-    color: var(--azul);
-    font-size: 59px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-}
+    /* Syle for the whole main section */
+    body .main {
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
-.me-text h5 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: var(--letra);
-    border-bottom: 2px dashed var(--azul);
-}
+    /* Style for the h2 */
+    .me-text h2 {
+        color: var(--azul);
+        font-size: 59px;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
 
-.me-text p:active {
-    margin-top: 20px;
-    border: 2px dashed var(--letra);
-    border-radius: 30px;
-    padding: 0px 30px 0px 25px;
-    transform: scale(1.1);
-    transition: ease-in-out 400ms;
-}
+    /* Style for the h5 */
+    .me-text h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: var(--letra);
+        border-bottom: 2px dashed var(--azul);
+    }
 
-.me-text p::selection {
-    background-color: var(--azul);
-}
+    /* When clicking on the p on me text a transition of scale displays */
+    .me-text p:active {
+        margin-top: 20px;
+        border: 2px dashed var(--letra);
+        border-radius: 30px;
+        padding: 0px 30px 0px 25px;
+        transform: scale(1.1);
+        transition: ease-in-out 400ms;
+    }
 
-.me-text p {
-    color: black;
-    letter-spacing: 1px;
-    line-height: 20px;
-    margin-bottom: 45px;
-}
+    /* Changes the background color of th eparagraph section when selection content */
+    .me-text p::selection {
+        background-color: var(--azul);
+    }
 
-.about-me button {
-    background-color: var(--gris);
-    color: var(--letra);
-    text-decoration: none;
-    outline: none;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: bold;
-    display: inline;
-    margin-left: 190px;
-    margin-bottom: 65px;
-    cursor: pointer;
-}
+    /* Style for p inside of .me text */
+    .me-text p {
+        color: black;
+        letter-spacing: 1px;
+        line-height: 20px;
+        margin-bottom: 45px;
+    }
 
-.about-me button:hover {
-    
-    border: 2px solid var(--azul);
-    border-radius: 30px;
-    transform: scale(1.2);
-    transition: ease-in-out 400ms;
-}
-/* -----------------------------Projects/Work-------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
+    /* Style for the button below the paragraph */
+    .about-me button {
+        background-color: var(--gris);
+        color: var(--letra);
+        text-decoration: none;
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+        display: inline;
+        margin-left: 190px;
+        margin-bottom: 65px;
+        cursor: pointer;
+    }
 
-.projects {
-    background-color: #333333;
-    width: 100%;
-    padding: 100px 0px;
-    border-top: 2px solid var(--azul);
-}
+    /* Style changes when hovering over the button below the about-me p */
+    .about-me button:hover {
+        
+        border: 2px solid var(--azul);
+        border-radius: 30px;
+        transform: scale(1.2);
+        transition: ease-in-out 400ms;
+    }
+    /* -----------------------------Projects/Work-------------------------------------------- */
+    /* -------------------------------------------------------------------------------------- */
 
-.projects-title h2 {
-    color: white;
-    font-size: 59px;
-    width: 1130px;
-    margin: 30px auto;
-    padding-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px dashed var(--azul);
-}
+    /* Style for the whole Project section box */
+    .projects {
+        background-color: #333333;
+        width: 100%;
+        padding: 100px 0px;
+        border-top: 2px solid var(--azul);
+    }
 
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-}
+    /* Heading 2 style for the title in projects */
+    .projects-title h2 {
+        color: white;
+        font-size: 59px;
+        width: 1130px;
+        margin: 30px auto;
+        padding-bottom: 20px;
+        text-align: center;
+        border-bottom: 2px dashed var(--azul);
+    }
 
-.icon {
-    height: 360px;
-    width: 330px;
-    padding: 20px 35px;
-    background-color: var(--azul2);
-    border-radius: 30px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    background-image: url(./images/stock-1863880.jpg);
-    background-size: cover;
-    background-position: center;
-    filter: blur(2px);
-}
+    /* Style for the boxes and they are set to display: flex in order to align them. */
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+    }
 
-.icon:hover {
-    filter: blur(0px);
-    transition: ease-in-out 200ms;
-}
+    /* Style for the icon/idividual boxes. Alos sets a blur effect */
+    .icon {
+        height: 360px;
+        width: 330px;
+        padding: 20px 35px;
+        background-color: var(--azul2);
+        border-radius: 30px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        background-image: url(./images/stock-1863880.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px);
+    }
 
-.box i {
-    font-size: 30px;
-    display: block;
-    text-align: center;
-    margin: 25px 0px;
-    color: var(--azul);
-}
+    /* When hovering over the box the blur dissapears. */
+    .icon:hover {
+        filter: blur(0px);
+        transition: ease-in-out 200ms;
+    }
 
-.projects h5 {
-    color: var(--letra);
-    font-size: 20px;
-}
+    /* Adjusts and stylize the logo in top of the box */
+    .box i {
+        font-size: 30px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: var(--azul);
+    }
 
-.projects p {
-    color: var(--azul);
-}
+    /* Style for h5 */
+    .projects h5 {
+        color: var(--letra);
+        font-size: 20px;
+    }
 
-.projects .button {
-    background-color: var(--gris);
-    color: var(--letra);
-    text-decoration: none;
-    outline: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 7px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    margin-top: 40px;
-}
+    /* Style for the p inside fo it */
+    .projects p {
+        color: var(--azul);
+    }
 
-.projects .button:hover {
-    color: var(--azul);
-    border: 2px dashed var(--azul);
-}
+    /* Style for the info button */
+    .projects .button {
+        background-color: var(--gris);
+        color: var(--letra);
+        text-decoration: none;
+        outline: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 7px 20px;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 40px;
+    }
 
-/* -----------------------------------Contact Me Area------------------------------------ */
-/* -------------------------------------------------------------------------------------- */
+    /* When hovering over the projects button  (INFO) it changes style */
+    .projects .button:hover {
+        color: var(--azul);
+        border: 2px dashed var(--azul);
+    }
 
-.contact {
-    width: 100%;
-    height: 30vh;
-    background-image: url(./images/typewriter.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 10px solid var(--gris);
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    border-top: 2px solid var(--azul);
-    
-}
+    /* -----------------------------------Contact Me Area------------------------------------ */
+    /* -------------------------------------------------------------------------------------- */
 
-.contact h2 {
-    color: var(--letra);
-    font-size: 59px;
-    border: 2px double var(--azul);
-    border-radius: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    /* Style for the whole contact me section */
+    .contact {
+        width: 100%;
+        height: 30vh;
+        background-image: url(./images/typewriter.jpg);
+        background-size: cover;
+        background-position: center;
+        border: 10px solid var(--gris);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 2px solid var(--azul);
+        
+    }
 
-.contact nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 50px;
-    padding-left: 7%;
-    padding-right: 7%;
-}
-.contact ul {
-    margin-bottom: 45px;
-}
-.contact ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 25px;
-}
+    /* Style for h2 in section */
+    .contact h2 {
+        color: var(--letra);
+        font-size: 59px;
+        border: 2px double var(--azul);
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-.contact a {
-    color: var(--letra);
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-    text-transform: capitalize;
-    border-top: 2px solid var(--azul);
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    filter: blur(2px);
-}
+    /* Style for the navigation bar next to the contact me title */
+    .contact nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
 
-.contact a:hover {
-    filter: blur(0px);
-    border: 2px solid var(--azul);
-    border-radius: 30px;
-    transition: ease-in-out 300ms;
-}
+    /* Style for the unordered list / list */
+    .contact ul {
+        margin-bottom: 45px;
+    }
+    .contact ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
 
+    /* Adjust and style the individual elements inside of the list applying blur */
+    .contact a {
+        color: var(--letra);
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: capitalize;
+        border-top: 2px solid var(--azul);
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        filter: blur(2px);
+    }
 
-/* --------------------------------------FOOTER------------------------------------------ */
-/* -------------------------------------------------------------------------------------- */
-
-footer {
-    position: relative;
-    width: 100%;
-    background-color: var(--fondo);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    border-top: 2px solid var(--azul);
-    border-bottom: 2px solid var(--azul);
-}
-
-footer h2 {
-    font-size: 25px;
-    color: var(--letra);
-
-}
-
-footer p {
-    font-size: 15px;
-    color: var(--azul);
-
-}
-
-footer .s-media {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    font-size: 40px;
-}
-
-.s-media a {
-    color: var(--letra);
-}
+    /* When hovering over the nav bar elements the blur dissapears and the border changes */
+    .contact a:hover {
+        filter: blur(0px);
+        border: 2px solid var(--azul);
+        border-radius: 30px;
+        transition: ease-in-out 300ms;
+    }
 
 
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
+    /* --------------------------------------FOOTER------------------------------------------ */
+    /* -------------------------------------------------------------------------------------- */
 
-html::-webkit-scrollbar {
-    width: 10px;
-}
-html::-webkit-scrollbar-track {
-    background-color: var(--gris);
-}
-html::-webkit-scrollbar-thumb {
-    background-color: var(--azul);
-}
-    
-/* -------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
+    /* Syle for the whole footer */
+    footer {
+        position: relative;
+        width: 100%;
+        background-color: var(--fondo);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        border-top: 2px solid var(--azul);
+        border-bottom: 2px solid var(--azul);
+    }
+
+    /* Style for h2 in Footer */
+    footer h2 {
+        font-size: 25px;
+        color: var(--letra);
+
+    }
+
+    /* Style for the Footer p */
+    footer p {
+        font-size: 15px;
+        color: var(--azul);
+
+    }
+
+    /* Sets the style for the social media icons at the bottom */
+    footer .s-media {
+        padding-bottom: 25px;
+        padding-top: 25px;
+        font-size: 40px;
+    }
+
+    /* Sets the color for all the icons. */
+    .s-media a {
+        color: var(--letra);
+    }
+
+
+    /* -------------------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------------------- */
+
+    /* Changes the scrollbar, size, background colors and actual bar colors. */
+    html::-webkit-scrollbar {
+        width: 10px;
+    }
+    html::-webkit-scrollbar-track {
+        background-color: var(--gris);
+    }
+    html::-webkit-scrollbar-thumb {
+        background-color: var(--azul);
+    }
+    /*                                                                        */
+
+    /* -------------------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------------------- */
 }
 
 
