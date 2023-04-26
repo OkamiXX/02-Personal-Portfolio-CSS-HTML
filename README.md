@@ -39,4 +39,4 @@ I used many skills on this project to help me achieve the desired aesthetic and 
 
 GitHub Repository: [https://github.com/OkamiXX/02-Personal-Portfolio-CSS-HTML](https://github.com/OkamiXX/02-Personal-Portfolio-CSS-HTML)
 
-Deployed Website:[]()
+Deployed Website: [https://okamixx.github.io/02-Personal-Portfolio-CSS-HTML/](https://okamixx.github.io/02-Personal-Portfolio-CSS-HTML/)
