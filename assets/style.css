@@ -79,12 +79,14 @@
     border: 2px solid var(--azul);
     padding: 10px 25px;
     border-radius: 30px;
+    
 }
 .button:hover {
     transform: scale(1.1);
     border: 2px dashed var(--azul);
     box-shadow: 0px 0px 5px #000, 0px 0px 10px var(--azul);
     transition: 250ms;
+    cursor: pointer;
 }
 
 .my-info {
@@ -115,6 +117,7 @@
     padding: 0px 30px 0px 25px;
     transform: scale(1.1);
     transition: ease-in-out 400ms;
+    cursor: pointer;
 }
 
 .my-info h4 {
@@ -149,6 +152,7 @@
     color: var(--letra);
     top: 8.3px;
     left: 350px;
+    cursor: pointer;
     
 }
 
@@ -175,11 +179,105 @@
 .about-me img {
     height: auto;
     width: 430px;
+    border: 20px solid var(--gris);
+    border-radius: 30px;
+    margin-bottom: 150px;
+}
+
+.about-me .me-text {
+    width: 550px;
+    padding-bottom: 320px;
+    
+}
+
+body .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.me-text h2 {
+    color: var(--azul);
+    font-size: 59px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.me-text h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--letra);
+    border-bottom: 2px dashed var(--azul);
+}
+
+.me-text p:active {
+    margin-top: 20px;
+    border: 2px dashed var(--letra);
+    border-radius: 30px;
+    padding: 0px 30px 0px 25px;
+    transform: scale(1.1);
+    transition: ease-in-out 400ms;
+}
+
+.me-text p::selection {
+    background-color: var(--azul);
+}
+
+.me-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+
+.about-me button {
+    background-color: var(--gris);
+    color: var(--letra);
+    text-decoration: none;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    display: inline;
+    margin-left: 190px;
+    margin-bottom: 65px;
+    cursor: pointer;
+}
+
+.about-me button:hover {
+    
     border: 2px solid var(--azul);
+    border-radius: 30px;
+    transform: scale(1.2);
+    transition: ease-in-out 400ms;
+}
+/* -----------------------------Projects/Work-------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+.projects {
     
 }
 
 
+
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-track {
+    background-color: var(--gris);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--azul);
+}
 
 /* -------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
